@@ -1,0 +1,59 @@
+/* styles.css */
+/* Color scheme: blue, white, grey, black, gold, green */
+/* Fonts: Arial, Georgia, Verdana */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #000000;
+}
+
+header, footer {
+    background: #004080;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+/* Navigation Styles */
+nav a {
+    color: white;
+    background-color: #8B0000; /* Crimson Red */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2B3A67; /* Royal Blue */
+    color: #FFD700;            /* Gold text on hover */
+}
+
+nav a:active {
+    background-color: #FFD700; /* Gold background */
+    color: #8B0000;            /* Red text */
+}
