@@ -1,0 +1,94 @@
+/* styles.css */
+/* Color scheme: blue, white, grey, black, gold, green */
+/* Fonts: Arial, Georgia, Verdana */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #000000;
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #01157c; /* Deep Blue */
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 5px 20px;
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+    background-color: #8B0000; /* Dark Red */
+
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #2B3A67; /* Royal Blue */
+    color: #FFD700; /* Gold text */
+}
+
+.sidebar nav ul li a:active {
+    background-color: #FFD700; /* Gold background */
+    color: #8B0000; /* Red text */
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Header and Footer */
+header, footer {
+    background: #004080;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Responsive Text for Mobile */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar nav ul li a {
+        display: inline-block;
+    }
+}
